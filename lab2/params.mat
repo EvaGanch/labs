@@ -12,16 +12,16 @@
  0
 # name: groupNumber
 # type: scalar
- 1
+ 2
 # name: studentNumber
 # type: scalar
- 21
+ 10
 # name: gamma1
 # type: scalar
  1
 # name: gamma2
 # type: scalar
- 7
+ 25
 # name: phi
 # type: function handle
  @<anonymous>
