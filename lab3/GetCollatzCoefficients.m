@@ -6,9 +6,13 @@ function [coefficients, approximationDegree] = GetCollatzCoefficients(operatorCo
 	matrix = (ones(divisionNumber + 1, 1) * ((0:divisionNumber) - pointNumber)) .^ ((ones(divisionNumber + 1, 1) * (0:divisionNumber))');
 	rightSide = zeros(divisionNumber + 1, 1);
 	rightSide(1) = 1;
-	for i = 1:operatorDegree
+	for i = 1 : operatorDegree - 1
 		rightSide(i + 1) = rightSide(i) * i / intervalLength;
 	end;
+	size(rightSide)
+	size(operatorCoefficients)
 	rightSide = rightSide .* ([operatorCoefficients, zeros(1, approximationDegree)]');
 	coefficients = matrix \ rightSide;
+
+	approximationDegree += 1;
 end;

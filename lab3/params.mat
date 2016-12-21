@@ -2,13 +2,13 @@
 # type: matrix
 # rows: 1
 # columns: 6
- 1 0 13 0 21 1
+ 1 0 1 0 3 1
 # name: divisionNumber
 # type: scalar
- 8
+ 5
 # name: pointNumber
 # type: scalar
- 4
+ 1
 # name: interval
 # type: matrix
 # rows: 1
