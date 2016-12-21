@@ -21,8 +21,6 @@ function [] = main()
 	% Making starting approximation for other points
 	length(subintervalLength:subintervalLength:1 - subintervalLength)
 	solution(2 : end - 1) = solution(1) + (solution(pointsCount) - solution(1)) .* (1 : pointsCount-2)' / pointsCount;
-	showMe(solution)
-	pause;
 	linearPart = -diag(coefficient(points')(2 : end - 1) + 2 / subintervalLength ^ 2) +...
 	 (diag(ones(1, pointsCount - 3), 1) + diag(ones(1, pointsCount - 3), -1)) / subintervalLength ^ 2;
 	constants = zeros(pointsCount - 2, 1);
